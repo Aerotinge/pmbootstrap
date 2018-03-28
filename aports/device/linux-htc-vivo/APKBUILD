@@ -1,4 +1,4 @@
-# Kernel config based on: arch/arm/configs/(CHANGEME!)
+# Kernel config based on: arch/arm/configs/cyanogen_vivo_defconfig
 
 pkgname="linux-htc-vivo"
 pkgver=3.0.101
