@@ -1,0 +1,22 @@
+# Reference: <https://postmarketos.org/devicepkg>
+pkgname="device-htc-a5ul"
+pkgdesc="hTC Desire 816"
+pkgver=0.1
+pkgrel=0
+url="https://postmarketos.org"
+license="MIT"
+arch="noarch"
+options="!check"
+depends="postmarketos-base linux-htc-a5ul mkbootimg mesa-dri-swrast"
+makedepends="devicepkg-dev"
+source="deviceinfo"
+
+build() {
+	devicepkg_build $startdir $pkgname
+}
+
+package() {
+	devicepkg_package $startdir $pkgname
+}
+
+sha512sums="51094920b676c6b5b8907187ca781cc2fec67e356538a008cbdb6046d00914cfdffa2a3ba6392bf1d90ad6744429372c428fc5002d41bd18ed3ec74aebbd9248  deviceinfo"
